@@ -1,4 +1,359 @@
-body h1{
-    color: red;
-    text-align: center;
+@font-face {
+    font-family: 'JF Flat Regular';
+    src: url(../fonts/JF-Flat-regular.eot);
+    src: url(../fonts/JF-Flat-regular.eot?iefix) format('embedded-opentype'),
+      url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
+      url(../fonts/JF-Flat-regular.woff) format('woff'),
+      url(../fonts/JF-Flat-regular.ttf) format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  body {
+      font-family: "JF Flat Regular" , 'Segoe UI' , Verdana, Geneva, Tahoma, sans-serif;     
+  }
+  
+.custom-navbar {
+    border-bottom: 3px solid #EEF0EA;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
+.custom-navbar .container .navbar-brand {
+    margin-left: 30px;
+}
+
+.custom-navbar .container .navbar-brand img {
+    width: 60px;
+}
+
+.custom-navbar .navbar-nav li a.nav-link {
+    color: #555555;
+    font-size: 16px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.custom-navbar .navbar-nav a.nav-link:hover {
+    color: black
+}
+
+.custom-navbar .navbar-nav li.active a.nav-link {
+    color: #fff;
+    font-weight: 700;
+    background-color: #555555;
+    border-radius: 10%;
+}
+
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
+    background-color: black;
+}
+
+#slider .carousel-item img {
+    width: 100%;
+}
+
+#slider .carousel-control-prev,
+#slider .carousel-control-next {
+    color: #868686;
+    font-size: 20px;
+}
+
+section.services {
+    padding: 100px 0;
+}
+
+section.services .title h2 {
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section.services .title {
+    margin-bottom: 50px;
+}
+
+section.services .card {
+    background-color: #ffffff;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 30px;
+    transition: all 1s ease;
+}
+
+section.services .card p {
+    margin: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+section.services .card-icon i {
+    margin-right: 50px;
+    
+}
+
+section.products {
+    background-color: gray;
+}
+
+section.products h2 {
+    padding: 30px;
+}
+
+section.products .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+  
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:hover {
+    opacity: 0.7;
+}
+
+footer {
+    background-color: white;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer h3 {
+    font-size: 30px;
+    width: 80%;
+    margin: 50px auto 30px;
+}
+
+footer .top-footer .input-group {
+    width: 30%;
+    margin: 30px auto;
+    position: relative;
+    
+}
+
+footer .top-footer .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    font-family: ar-font;
+    color: black;
+    border-color: black;
+    height: auto;
+}
+
+footer .top-footer .alert {
+    display: none;
+    position: absolute;
+    top: 110%;
+    right: 0;
+    left: 0;
+}
+
+footer .top-footer .input-group input:hover,
+footer .top-footer .input-group input:focus {
+    box-shadow: gray;
+    border-color: black;
+}
+
+footer .top-footer .input-group button {
+    border-radius: 0;
+    background-color: #393939;
+    padding: .5rem 1.5rem;
+}
+
+footer .top-footer .input-group button:hover,
+footer .top-footer .input-group button:focus {
+    box-shadow: 0 0 0;
+    border-color: transparent;
+}
+
+footer .contact {
+    background-color: rgba(0, 0, 0, 0.747);
+    padding: 40px 0 10px;
+    color: #fff;
+}
+
+footer .contact h3 {
+    font-size: 30px;
+    margin: 0 auto 20px;
+}
+
+footer .contact ul {
+    padding: 0;
+}
+
+footer .contact ul li {
+    margin: 0 5px 10px;
+}
+
+footer .contact ul li a {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    font-size: 1.2em;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+footer .contact ul li a:hover {
+    background-color: black;
+}
+
+section.map {
+    margin-top: 40px;
+}
+
+section.about-us {
+    height: 100vh;
+    width: 100%;
+    background: url(../images/product2.jpg)no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+section.about-us .info {
+    width: 50%;
+    background: rgba(0, 0, 0, 0.123);
+    color: white;
+    text-align: center;
+    padding: 50px;
+    margin-top: 110px;
+    margin-right: 200px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+section.contactus {
+    background: #FFFFFF;
+    width: 900px;
+    height: 650px;
+    position: relative;
+    margin-top: 108px;
+    margin-right: 10px;
+}
+
+section.contactus .info {
+    text-align: right;
+    margin-top: 10px;
+}
+section.contactus .info .formgroup2{
+    padding: 10px;
+    margin: 30px;
+}
+section.contactus .info button{
+    margin-top: 20px;
+}
+section.contactus .form-group2{
+    background-color: rgba(0, 0, 0, 0.048);
+    color: black;
+
+}
+
+section.product1{
+    margin-top: 100px;
+    text-align: right;
+    background-color:rgb(36, 14, 14);
+}
+section.product1 .details,
+section.product2 .details,
+section.product3 .details {
+    color: white;
+}
+
+  .btn-with-icon {
+    font-size: 18px;
+    margin-top: 1px;
+    margin-bottom: 15px;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid gray;
+    border-radius: 30px;
+    box-shadow: none;
+    color: white;
+}
+.btn-with-icon:hover{
+    background-color: gray;
+}
+.rating {
+    color: #c2c2c2;
+}
+
+.rating .active {
+    color: #f3af41;
+}
+#carousel-product-images .carousel-indicators{
+    position: relative;
+    top: -35px;
+    right: 0;
+}
+#carousel-product-images .carousel-indicators img{
+    border: 1px solid #EBEBEB;
+    width: 35%;
+
+}
+.comment h1 {
+    margin:20px;
+    font-size: 30px;
+    color: white;
+
+}
+.comment .card .title {
+    color: black !important;
+}
+.post {
+    margin-right: 30px;
+}
+ .post .post-heading img{
+     width: 125px;
+     padding: 5px; 
+ }
+.post .title {
+    font-size: 20px;
+    margin-top: 8px;
+}
+.post span {
+    font-size: 15px;
+}
+.post p {
+    margin-top: 5px;
+    color: black;
+}
+
+ .similar-products h2{
+    font-family: ar-font;
+    color: white;
+}
+ .similar-products .card-text {
+    color: black;
+    font-size: 22px;
+}
+section.product2{
+    margin-top: 100px;
+    text-align: right;
+    background-color:rgb(61, 51, 51);
+}
+section.product3{
+    margin-top: 100px;
+    text-align: right;
+    background-color:rgb(90, 18, 18);
+}
+
+  

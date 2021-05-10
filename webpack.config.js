@@ -41,6 +41,7 @@ module.exports = {
                     {
                       loader: MiniCssExtractPlugin.loader,
                       options: {
+                          publicPath:'../',
                         esModule: false,
                       },
                     },
@@ -59,6 +60,19 @@ module.exports = {
                   },
                 ],
               },
+              {
+                  test: /\.(eot|svg|woff|ttf)$/,
+                  use :[
+                      {
+                          loader: "file-loader",
+                          options:{
+                              name:'[name].[ext]',
+                              outputPath:"fonts",
+                              esModule:false,
+                          }
+                      }
+                  ]
+              }
 
         ]
     },
@@ -69,6 +83,37 @@ module.exports = {
            template:"./src/index.html",
 
        }),
+       new HtmlWebpackPlugin({
+        filename:"suppliers.html",
+        template:"./src/suppliers.html",
+
+    }),
+    new HtmlWebpackPlugin({
+        filename:"contact.html",
+        template:"./src/contact.html",
+
+    }),
+    new HtmlWebpackPlugin({
+        filename:"about.html",
+        template:"./src/about.html",
+
+    }),
+    new HtmlWebpackPlugin({
+        filename:"product1.html",
+        template:"./src/product1.html",
+
+    }),
+    new HtmlWebpackPlugin({
+        filename:"product2.html",
+        template:"./src/product2.html",
+
+    }),
+    new HtmlWebpackPlugin({
+        filename:"product3.html",
+        template:"./src/product3.html",
+
+    }),
+ 
        new  MiniCssExtractPlugin({filename:"css/style.css"}),
        new OptimizeCSSAssetsPlugin({}),
    ],
