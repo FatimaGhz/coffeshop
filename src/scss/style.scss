@@ -1,0 +1,54 @@
+@import './variables';
+@import './navbar';
+@import './footer';
+@import 'service';
+
+.custom-navbar .navbar-nav a.nav-link:hover {
+    color: $my-color
+}
+.custom-navbar .navbar-nav li.active:hover a.nav-link {
+    background-color: $my-color;
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: $my-color;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+footer .top-footer .input-group input {
+    border-radius: 0;
+    font-size: 18px;
+    font-family: ar-font;
+    color: $my-color;
+    border-color: $my-color;
+    height: auto;
+}
+footer .top-footer .input-group input:hover,
+footer .top-footer .input-group input:focus {
+    box-shadow: gray;
+    border-color: $my-color;
+}
+footer .contact ul li a:hover {
+    background-color: $my-color;
+}
+section.contactus .form-group2{
+    background-color: rgba(0, 0, 0, 0.048);
+    color: $my-color;
+
+}
+.comment .card .title {
+    color: $my-color !important;
+}
+.post p {
+    margin-top: 5px;
+    color: $my-color;
+}
+.similar-products .card-text {
+    color: $my-color;
+    font-size: 22px;
+}

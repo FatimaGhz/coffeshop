@@ -36,7 +36,7 @@
 }
 
 .custom-navbar .navbar-nav a.nav-link:hover {
-    color: black
+    color: #000
 }
 
 .custom-navbar .navbar-nav li.active a.nav-link {
@@ -47,7 +47,7 @@
 }
 
 .custom-navbar .navbar-nav li.active:hover a.nav-link {
-    background-color: black;
+    background-color: #000;
 }
 
 #slider .carousel-item img {
@@ -152,8 +152,8 @@ footer .top-footer .input-group input {
     border-radius: 0;
     font-size: 18px;
     font-family: ar-font;
-    color: black;
-    border-color: black;
+    color: #000;
+    border-color: #000;
     height: auto;
 }
 
@@ -168,7 +168,7 @@ footer .top-footer .alert {
 footer .top-footer .input-group input:hover,
 footer .top-footer .input-group input:focus {
     box-shadow: gray;
-    border-color: black;
+    border-color: #000;
 }
 
 footer .top-footer .input-group button {
@@ -215,7 +215,7 @@ footer .contact ul li a {
 }
 
 footer .contact ul li a:hover {
-    background-color: black;
+    background-color: #000;
 }
 
 section.map {
@@ -263,7 +263,7 @@ section.contactus .info button{
 }
 section.contactus .form-group2{
     background-color: rgba(0, 0, 0, 0.048);
-    color: black;
+    color: #000;
 
 }
 
@@ -315,7 +315,7 @@ section.product3 .details {
 
 }
 .comment .card .title {
-    color: black !important;
+    color: #000 !important;
 }
 .post {
     margin-right: 30px;
@@ -333,7 +333,7 @@ section.product3 .details {
 }
 .post p {
     margin-top: 5px;
-    color: black;
+    color: #000;
 }
 
  .similar-products h2{
@@ -341,7 +341,7 @@ section.product3 .details {
     color: white;
 }
  .similar-products .card-text {
-    color: black;
+    color: #000;
     font-size: 22px;
 }
 section.product2{
@@ -353,6 +353,27 @@ section.product3{
     margin-top: 100px;
     text-align: right;
     background-color:rgb(90, 18, 18);
+}
+
+@media (max-width:576px){
+    section.about-us{
+        height: 250vh;
+    }
+    section.about-us .info{
+        width: 50%;
+
+    }
+
+}
+
+@media (max-width:1199px) {
+    section.about-us{
+        height: 200vh;
+    }
+    section.about-us .info{
+        width: 50%;
+
+    }
 }
 
   

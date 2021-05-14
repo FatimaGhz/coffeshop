@@ -2,6 +2,8 @@ var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
 var OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const { htmlPrefilter } = require("jquery");
+
 module.exports = {
     entry : {
         app: './src/index.js'
@@ -36,16 +38,16 @@ module.exports = {
                 ]
             },
             {
-                test:/\.css$/,
+                test:/\.(sa|sc|c)ss$/,
                 use:[
                     {
                       loader: MiniCssExtractPlugin.loader,
                       options: {
                           publicPath:'../',
-                        esModule: false,
                       },
                     },
                     'css-loader',
+                    'sass-loader'
                   ]
             },
             {
@@ -72,7 +74,16 @@ module.exports = {
                           }
                       }
                   ]
-              }
+              },
+              {
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
+                options: {
+                    exposes: ['$', 'jQuery'],
+
+                }
+            },
+            
 
         ]
     },
